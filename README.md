@@ -9,7 +9,8 @@ Lembre-se que os aplicativos gratuitos só podem estar ativos 18 horas por dia.
 
 Saiba mais: https://devcenter.heroku.com/articles/dyno-sleeping
 
-It's recommended to stop and verify in your [dashboard](https://dashboard.heroku.com/) if the worker is running if you don't want to get charged.
+Este site foi construído baseado no [AndreMiras/crossbar-hello-python-to-heroku](https://github.com/AndreMiras/crossbar-hello-python-to-heroku).
+
 ```
 heroku ps:scale web=0
 heroku logs --tail
