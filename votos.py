@@ -49,7 +49,7 @@ class VotosBackend(ApplicationSession):
 if __name__ == '__main__':
     runner = ApplicationRunner(
             url = u'ws://{}:{}/ws'.format('localhost', 8080), 
-            realm = 'crossbarRobotica')
+            realm = 'embarcados')
 			
     runner.run(VotosBackend)
 	
