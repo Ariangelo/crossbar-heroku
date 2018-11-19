@@ -3,7 +3,7 @@ var conexao = new autobahn.Connection({
     transports: [
         {
             'type': 'websocket',
-            'url' : 'ws://app-votar.herokuapp.com/'
+            'url' : 'ws:' + '//' + document.location.host + '/ws'
         }
     ],
     realm: "embarcados"
