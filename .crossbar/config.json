@@ -5,7 +5,7 @@
             "type": "router",
             "realms": [
                 {
-                    "name": "realm1",
+                    "name": "embarcados",
                     "roles": [
                         {
                             "name": "anonymous",
@@ -66,8 +66,8 @@
             "components": [
                 {
                     "type": "class",
-                    "classname": "hello.AppSession",
-                    "realm": "realm1",
+                    "classname": "votos.VotosBackend",
+                    "realm": "embarcados",
                     "transport": {
                         "type": "websocket",
                         "endpoint": {
