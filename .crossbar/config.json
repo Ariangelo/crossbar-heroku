@@ -44,6 +44,14 @@
                         },
                         "ws": {
                             "type": "websocket"
+                        },
+                        "call": {
+                            "type": "caller",
+                            "realm": "embarcados",
+                            "role": "anonymous",
+                            "options": {
+                                "debug": true
+                            }
                         }
                     }
                 },
