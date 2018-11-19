@@ -6,7 +6,7 @@ var conexao = new autobahn.Connection({
             'url': 'ws://localhost:8080/ws'
         }
     ],
-    realm: "crossbarRobotica"
+    realm: "embarcados"
 });
 
 conexao.onopen = function (sessao, detalhe) {
