@@ -3,7 +3,7 @@ var conexao = new autobahn.Connection({
     transports: [
         {
             'type': 'websocket',
-            'url': 'ws://localhost:8080/ws'
+            'url': 'ws://localhost/ws'
         }
     ],
     realm: "embarcados"
