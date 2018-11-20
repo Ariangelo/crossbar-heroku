@@ -28,10 +28,10 @@ class VotosBackend(ApplicationSession):
     @wamp.register(u'io.crossbar.demo.voto.votar')
     def submitVoto(self, robo):
         #Recebe o identificador do robo e atualiza o valor na variavel
+        print(u'Robo {} recebeu mais um voto'.format(robo))
         self._votos[robo] += 1
         resultado = json.dumps({robo: self._votos[robo]})
         self.publish(u'io.crossbar.demo.voto.onvoto', resultado)
-        #self.publish(u'io.crossbar.demo.voto.onresultado', self._votos)
 
     @wamp.register(u'io.crossbar.demo.voto.reset')
     def resetVotos(self):
